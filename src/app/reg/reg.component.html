@@ -1,0 +1,25 @@
+<div class="flex-container">
+  <mat-card class="example-card">
+    <h1 class="title">Registration</h1>
+    <form class="example-form" [formGroup]="registerForm" >
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="CompanyName" formControlName="companyName">
+      </mat-form-field><br>
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="price" formControlName="price">
+      </mat-form-field><br>
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="Email" formControlName="email">
+      </mat-form-field>
+      <br />
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="Image" formControlName="image">
+      </mat-form-field>
+    </form>
+
+    <mat-card-actions>
+      <!-- <button mat-raised-button color="accent">Login</button> -->
+      <button mat-raised-button color="accent" type="submit" (click)="onSubmit()" value="Submit">Register</button>
+    </mat-card-actions>
+  </mat-card>
+</div>

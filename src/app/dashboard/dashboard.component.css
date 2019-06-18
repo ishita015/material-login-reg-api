@@ -1,0 +1,27 @@
+.example-container {
+    height: 100%;
+}
+
+.mat-drawer {
+    position: relative;
+    z-index: 4;
+    display: block;
+    position: absolute;
+    top: 65px !important;
+    bottom: 64px !important;
+    z-index: 3;
+    outline: 0;
+    box-sizing: border-box;
+    overflow-y: auto;
+    transform: translate3d(-100%, 0, 0);
+}
+
+.footer-custom {
+    position: fixed;
+    bottom: 0px;
+    flex-direction: column;
+}
+
+.example-spacer {
+    flex: 1 1 auto;
+}

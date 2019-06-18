@@ -1,0 +1,25 @@
+<mat-toolbar>
+    <div class="example-sidenav-content">
+      <button type="button" mat-button (click)="drawer.toggle()">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </button>
+    </div>
+    <span>My Application</span>
+    <span  class="example-spacer"></span>
+   <i (click)="logout()" class="fa fa-sign-out" aria-hidden="true">Logout</i>
+</mat-toolbar>
+  
+  
+<mat-drawer #drawer class="example-sidenav" mode="side">
+    <button type="button" mat-button>
+      content-A
+    </button>
+    <br />
+    <button type="button" mat-button>
+      content-B
+    </button>
+</mat-drawer>
+  
+<mat-toolbar class="footer-custom">
+    <span>@ 2019</span>
+</mat-toolbar>
